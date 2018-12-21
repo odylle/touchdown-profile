@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/fa-all.min.css">
+    <link rel="stylesheet" href="/static/css/elite.css">
+
+    <title>Elite: Command Panel</title>
+</head>
+<body onload="preloader()">
+    <div class="loading" id="loader">
+        <img src="/static/images/EDLoader1.svg" type="svg" width="25%" height="25%" />
+    </div>
+    <div class="container-fluid p-2" id="buttons">
+        <div class="row h-100 m-0">
+            <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
+                <a class="flex-fill h-12-5 text-center bt bl" href="function macro('{LALT}{RSHIFT}{B}');" target="bottomFrame">-100% <i class="fa fa-caret-down text-danger pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center bl" href="function macro('{LALT}{RCTRL}{C}');" target="bottomFrame">-50% <i class="fa fa-caret-down text-danger pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center bl bb" href="function macro('{LALT}{RSHIFT}{C}');" target="bottomFrame">-25 <i class="fa fa-caret-down text-danger pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center bl bt" href="function macro('{L}');" target="bottomFrame">Ship<br>Lights</a>
+                <a class="flex-fill h-12-5 text-center bl" href="function macro('{M}');" target="bottomFrame">Switch<br>Hud Mode</a>
+                <a class="flex-fill h-12-5 text-center bl" href="function macro('{V}');" target="bottomFrame">Heatsink</a>
+                <a class="flex-fill h-12-5 text-center bl" href="function macro('{LALT}{RALT}{T}');" target="bottomFrame">Galaxy<br>Map</a>
+                <a class="flex-fill h-12-5 text-center bl bb" href="function macro('{LALT}{RCTRL}{Q}');" target="bottomFrame">Shield<br>Cell</a>
+            </div>
+            <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
+                <a class="flex-fill h-12-5 text-center bl br bt" href="#" target="bottomFrame">Supercruise</a>
+                <a class="flex-fill h-12-5 text-center bl bb br" href="function macro('{J}');" target="bottomFrame">Frame Shift<br>Drive</a>
+                <a class="flex-fill h-12-5 text-center bb" href="function macro('{X}');" target="bottomFrame">Full Stop</a>
+                <a class="flex-fill h-12-5 text-center bt" href="function macro('{Z}');" target="bottomFrame">Flight<br>Assist</a>
+                <a class="flex-fill h-12-5 text-center" href="function macro('{=}');" target="bottomFrame">Orbit<br>Lines</a>
+                <a class="flex-fill h-12-5 text-center" href="function macro('{DEL}');" target="bottomFrame">Silent<br>Running</a>
+                <a class="flex-fill h-12-5 text-center" href="function macro('{LALT}{RCTRL}{U}');" target="bottomFrame">System<br>Map</a>
+                <a class="flex-fill h-12-5 text-center bb" href="function macro('{LALT}{RALT}{Q}');" target="bottomFrame">Launch<br>Chaff</a>
+            </div>
+            <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
+                <a class="flex-fill h-12-5 text-center br bt" href="function macro('{LALT}{RCTRL}{E}');" target="bottomFrame"><i class="fa fa-caret-up text-success pr-1"></i> 100%</a>
+                <a class="flex-fill h-12-5 text-center br" href="function macro('{LALT}{RSHIFT}{D}');" target="bottomFrame"><i class="fa fa-caret-up text-success pr-1"></i> 50%</a>
+                <a class="flex-fill h-12-5 text-center bb br" href="function macro('{LALT}{RTRL}{D}');" target="bottomFrame"><i class="fa fa-caret-up text-success pr-1"></i> 25%</a>
+                <a class="flex-fill h-12-5 text-center bt br" href="function macro('{LALT}{RCTRL}{Q}');" target="bottomFrame">Landing<br>Gear</a>
+                <a class="flex-fill h-12-5 text-center br" href="function macro('{HOME}');" target="bottomFrame">Cargo<br>Scoop</a>
+                <a class="flex-fill h-12-5 text-center br" href="function macro('{\}');" target="bottomFrame">Mute<br>Mic</a>
+                <a class="flex-fill h-12-5 text-center br" href="function macro('{LALT}{RSHIFT}{K}');" target="bottomFrame">Target<br>Next Sytem</a>
+                <a class="flex-fill h-12-5 text-center bb br" href="#" target="bottomFrame">Jettison<br>Cargo</a>
+            </div>
+            <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
+                <a class="flex-fill h-12-5 text-center bl bt" href="function macro('{T}');" target="bottomFrame">Target<br>Ahead</a>
+                <a class="flex-fill h-12-5 text-center bl" href="function macro('{LALT}{RALT}{G}');" target="bottomFrame"><i class="fa fa-angle-double-left pr-1"></i>Ship</a>
+                <a class="flex-fill h-12-5 text-center bl" href="function macro('{LALT}{RSHIFT}{H}');" target="bottomFrame"><i class="fa fa-angle-double-left pr-1"></i>Hostile</a>
+                <a class="flex-fill h-12-5 text-center bl bb" href="function macro('{LALT}{RCTRL}{K}');" target="bottomFrame"><i class="fa fa-angle-double-left pr-1"></i>Subsystem</a>
+                <a class="flex-fill h-12-5 text-center bl bt" href="function macro('{1}');" target="bottomFrame">Target<br>Panel</a>
+                <a class="flex-fill h-12-5 text-center b" href="function macro('{BACKSPACE}');" target="bottomFrame">Back</a>
+                <a class="flex-fill h-12-5 text-center b" href="function macro('{Q}');" target="bottomFrame">Left<br>Tab</a>
+                <a class="flex-fill h-12-5 text-center bl bb" href="function macro('{A}');" target="bottomFrame"><i class="fa fa-arrow-left"></i></a>
+            </div>
+            <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
+                <a class="flex-fill h-12-5 text-center br bt" href="function macro('{H}');" target="bottomFrame">Highest<br>Threat</a>
+                <a class="flex-fill h-12-5 text-center br" href="function macro('{G}');" target="bottomFrame">Target<i class="fa fa-angle-double-right pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center br" href="function macro('{LALT}{RSHIFT}{H}');" target="bottomFrame">Hostile<i class="fa fa-angle-double-right pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center br bb" href="function macro('{Y}');" target="bottomFrame">Subsystem<i class="fa fa-angle-double-right pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center bt" href="function macro('{2');" target="bottomFrame">Comms<br>Panel</a>
+                <a class="flex-fill h-12-5 text-center bb" href="function macro('{3}');" target="bottomFrame">Role<br>Panel</a>
+                <a class="flex-fill h-12-5 text-center bt" href="function macro('{W}');" target="bottomFrame"><i class="fa fa-arrow-up"></i></a>
+                <a class="flex-fill h-12-5 text-center bb" href="function macro('{S}');" target="bottomFrame"><i class="fa fa-arrow-down"></i></a>
+            </div>
+            <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
+                <a class="flex-fill h-12-5 text-center bl bt br" href="function macro('{7}');" target="bottomFrame">Wingman 1</a>
+                <a class="flex-fill h-12-5 text-center bl br" href="function macro('{8}');" target="bottomFrame">Wingman 2</a>
+                <a class="flex-fill h-12-5 text-center bl br" href="function macro('{9}');" target="bottomFrame">Wingman 3</a>
+                <a class="flex-fill h-12-5 text-center bl bb br" href="function macro('{0}');" target="bottomFrame">Wingman<br>Target</a>
+                <a class="flex-fill h-12-5 text-center bt br" href="function macro('{4}');" target="bottomFrame">Systems<br>Panel</a>
+                <a class="flex-fill h-12-5 text-center b" href="function macro('{SPACE}');" target="bottomFrame">Select</a>
+                <a class="flex-fill h-12-5 text-center b" href="function macro('{E}');" target="bottomFrame">Right<br>Tab</a>
+                <a class="flex-fill h-12-5 text-center br bb" href="function macro('{D}');" target="bottomFrame"><i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts: Required -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- Scripts: Additional -->
+    <script> <!--Preloader-->
+        var myVar;
+
+        function preloader() {
+            myVar = setTimeout(showPage, 1500);
+        }
+
+        function showPage() {
+          document.getElementById("loader").style.opacity = 0;
+          document.getElementById("buttons").style.opacity = 1;
+        }
+    </script>
+</body>
+</html
