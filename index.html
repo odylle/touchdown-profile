@@ -13,69 +13,70 @@
 </head>
 <body onload="preloader()">
     <div class="loading" id="loader">
-        <img src="/static/images/EDLoader1.svg" type="svg" width="25%" height="25%" />
+        <!--<img src="/static/images/EDLoader1.svg" type="svg" width="25%" height="25%" />-->
+        Loading...
     </div>
     <div class="container-fluid p-2" id="buttons">
         <div class="row h-100 m-0">
             <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
-                <a class="flex-fill h-12-5 text-center bt bl" href="function macro('{LALT}{RSHIFT}{B}');" target="bottomFrame">-100% <i class="fa fa-caret-down text-danger pl-1"></i></a>
-                <a class="flex-fill h-12-5 text-center bl" href="function macro('{LALT}{RCTRL}{C}');" target="bottomFrame">-50% <i class="fa fa-caret-down text-danger pl-1"></i></a>
-                <a class="flex-fill h-12-5 text-center bl bb" href="function macro('{LALT}{RSHIFT}{C}');" target="bottomFrame">-25 <i class="fa fa-caret-down text-danger pl-1"></i></a>
-                <a class="flex-fill h-12-5 text-center bl bt" href="function macro('{L}');" target="bottomFrame">Ship<br>Lights</a>
-                <a class="flex-fill h-12-5 text-center bl" href="function macro('{M}');" target="bottomFrame">Switch<br>Hud Mode</a>
-                <a class="flex-fill h-12-5 text-center bl" href="function macro('{V}');" target="bottomFrame">Heatsink</a>
-                <a class="flex-fill h-12-5 text-center bl" href="function macro('{LALT}{RALT}{T}');" target="bottomFrame">Galaxy<br>Map</a>
-                <a class="flex-fill h-12-5 text-center bl bb" href="function macro('{LALT}{RCTRL}{Q}');" target="bottomFrame">Shield<br>Cell</a>
+                <a class="flex-fill h-12-5 text-center bt bl" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RSHIFT}{B}')")>-100% <i class="fa fa-caret-down text-danger pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center bl" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RCTRL}{C}')")>-50% <i class="fa fa-caret-down text-danger pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center bl bb" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RSHIFT}{C}')")>-25 <i class="fa fa-caret-down text-danger pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center bl bt" href="#" onclick=JavaScript:runMacro("macro('{L}')")>Ship<br>Lights</a>
+                <a class="flex-fill h-12-5 text-center bl" href="#" onclick=JavaScript:runMacro("macro('{M}')")>Switch<br>Hud Mode</a>
+                <a class="flex-fill h-12-5 text-center bl" href="#" onclick=JavaScript:runMacro("macro('{V}')")>Heatsink</a>
+                <a class="flex-fill h-12-5 text-center bl" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RALT}{T}')")>Galaxy<br>Map</a>
+                <a class="flex-fill h-12-5 text-center bl bb" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RCTRL}{Q}')")>Shield<br>Cell</a>
             </div>
             <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
-                <a class="flex-fill h-12-5 text-center bl br bt" href="#" target="bottomFrame">Supercruise</a>
-                <a class="flex-fill h-12-5 text-center bl bb br" href="function macro('{J}');" target="bottomFrame">Frame Shift<br>Drive</a>
-                <a class="flex-fill h-12-5 text-center bb" href="function macro('{X}');" target="bottomFrame">Full Stop</a>
-                <a class="flex-fill h-12-5 text-center bt" href="function macro('{Z}');" target="bottomFrame">Flight<br>Assist</a>
-                <a class="flex-fill h-12-5 text-center" href="function macro('{=}');" target="bottomFrame">Orbit<br>Lines</a>
-                <a class="flex-fill h-12-5 text-center" href="function macro('{DEL}');" target="bottomFrame">Silent<br>Running</a>
-                <a class="flex-fill h-12-5 text-center" href="function macro('{LALT}{RCTRL}{U}');" target="bottomFrame">System<br>Map</a>
-                <a class="flex-fill h-12-5 text-center bb" href="function macro('{LALT}{RALT}{Q}');" target="bottomFrame">Launch<br>Chaff</a>
+                <a class="flex-fill h-12-5 text-center bl br bt" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RSHIFT}{F}')")>Supercruise</a>
+                <a class="flex-fill h-12-5 text-center bl bb br" href="#" onclick=JavaScript:runMacro("macro('{J}')")>Frame Shift<br>Drive</a>
+                <a class="flex-fill h-12-5 text-center bb" href="#" onclick=JavaScript:runMacro("macro('{X}')")>Full Stop</a>
+                <a class="flex-fill h-12-5 text-center bt" href="#" onclick=JavaScript:runMacro("macro('{Z}')")>Flight<br>Assist</a>
+                <a class="flex-fill h-12-5 text-center" href="#" onclick=JavaScript:runMacro("macro('{=}')")>Orbit<br>Lines</a>
+                <a class="flex-fill h-12-5 text-center" href="#" onclick=JavaScript:runMacro("macro('{DEL}')")>Silent<br>Running</a>
+                <a class="flex-fill h-12-5 text-center" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RCTRL}{U}')")>System<br>Map</a>
+                <a class="flex-fill h-12-5 text-center bb" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RALT}{Q}')")>Launch<br>Chaff</a>
             </div>
             <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
-                <a class="flex-fill h-12-5 text-center br bt" href="function macro('{LALT}{RCTRL}{E}');" target="bottomFrame"><i class="fa fa-caret-up text-success pr-1"></i> 100%</a>
-                <a class="flex-fill h-12-5 text-center br" href="function macro('{LALT}{RSHIFT}{D}');" target="bottomFrame"><i class="fa fa-caret-up text-success pr-1"></i> 50%</a>
-                <a class="flex-fill h-12-5 text-center bb br" href="function macro('{LALT}{RTRL}{D}');" target="bottomFrame"><i class="fa fa-caret-up text-success pr-1"></i> 25%</a>
-                <a class="flex-fill h-12-5 text-center bt br" href="function macro('{LALT}{RCTRL}{Q}');" target="bottomFrame">Landing<br>Gear</a>
-                <a class="flex-fill h-12-5 text-center br" href="function macro('{HOME}');" target="bottomFrame">Cargo<br>Scoop</a>
-                <a class="flex-fill h-12-5 text-center br" href="function macro('{\}');" target="bottomFrame">Mute<br>Mic</a>
-                <a class="flex-fill h-12-5 text-center br" href="function macro('{LALT}{RSHIFT}{K}');" target="bottomFrame">Target<br>Next Sytem</a>
-                <a class="flex-fill h-12-5 text-center bb br" href="#" target="bottomFrame">Jettison<br>Cargo</a>
+                <a class="flex-fill h-12-5 text-center br bt" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RCTRL}{E}')")><i class="fa fa-caret-up text-success pr-1"></i> 100%</a>
+                <a class="flex-fill h-12-5 text-center br" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RSHIFT}{D}')")><i class="fa fa-caret-up text-success pr-1"></i> 50%</a>
+                <a class="flex-fill h-12-5 text-center bb br" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RTRL}{D}')")><i class="fa fa-caret-up text-success pr-1"></i> 25%</a>
+                <a class="flex-fill h-12-5 text-center bt br" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RCTRL}{Q}')")>Landing<br>Gear</a>
+                <a class="flex-fill h-12-5 text-center br" href="#" onclick=JavaScript:runMacro("macro('{HOME}')")>Cargo<br>Scoop</a>
+                <a class="flex-fill h-12-5 text-center br" href="#" onclick=JavaScript:runMacro("macro('{\}')")>Mute<br>Mic</a>
+                <a class="flex-fill h-12-5 text-center br" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RSHIFT}{K}')")>Target<br>Next Sytem</a>
+                <a class="flex-fill h-12-5 text-center bb br" href="#" onclick=JavaScript:runMacro("macro('{N}')")>Next<br>Firegroup</a>
             </div>
             <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
-                <a class="flex-fill h-12-5 text-center bl bt" href="function macro('{T}');" target="bottomFrame">Target<br>Ahead</a>
-                <a class="flex-fill h-12-5 text-center bl" href="function macro('{LALT}{RALT}{G}');" target="bottomFrame"><i class="fa fa-angle-double-left pr-1"></i>Ship</a>
-                <a class="flex-fill h-12-5 text-center bl" href="function macro('{LALT}{RSHIFT}{H}');" target="bottomFrame"><i class="fa fa-angle-double-left pr-1"></i>Hostile</a>
-                <a class="flex-fill h-12-5 text-center bl bb" href="function macro('{LALT}{RCTRL}{K}');" target="bottomFrame"><i class="fa fa-angle-double-left pr-1"></i>Subsystem</a>
-                <a class="flex-fill h-12-5 text-center bl bt" href="function macro('{1}');" target="bottomFrame">Target<br>Panel</a>
-                <a class="flex-fill h-12-5 text-center b" href="function macro('{BACKSPACE}');" target="bottomFrame">Back</a>
-                <a class="flex-fill h-12-5 text-center b" href="function macro('{Q}');" target="bottomFrame">Left<br>Tab</a>
-                <a class="flex-fill h-12-5 text-center bl bb" href="function macro('{A}');" target="bottomFrame"><i class="fa fa-arrow-left"></i></a>
+                <a class="flex-fill h-12-5 text-center bl bt" href="#" onclick=JavaScript:runMacro("macro('{T}')")>Target<br>Ahead</a>
+                <a class="flex-fill h-12-5 text-center bl" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RALT}{G}')")><i class="fa fa-angle-double-left pr-1"></i>Ship</a>
+                <a class="flex-fill h-12-5 text-center bl" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RSHIFT}{H}')")><i class="fa fa-angle-double-left pr-1"></i>Hostile</a>
+                <a class="flex-fill h-12-5 text-center bl bb" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RCTRL}{K}')")><i class="fa fa-angle-double-left pr-1"></i>Subsystem</a>
+                <a class="flex-fill h-12-5 text-center bl bt" href="#" onclick=JavaScript:runMacro("macro('{1}')")>Target<br>Panel</a>
+                <a class="flex-fill h-12-5 text-center b" href="#" onclick=JavaScript:runMacro("macro('{BACKSPACE}')")>Back</a>
+                <a class="flex-fill h-12-5 text-center b" href="#" onclick=JavaScript:runMacro("macro('{Q}')")>Left<br>Tab</a>
+                <a class="flex-fill h-12-5 text-center bl bb" href="#" onclick=JavaScript:runMacro("macro('{A}')")><i class="fa fa-arrow-left"></i></a>
             </div>
             <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
-                <a class="flex-fill h-12-5 text-center br bt" href="function macro('{H}');" target="bottomFrame">Highest<br>Threat</a>
-                <a class="flex-fill h-12-5 text-center br" href="function macro('{G}');" target="bottomFrame">Target<i class="fa fa-angle-double-right pl-1"></i></a>
-                <a class="flex-fill h-12-5 text-center br" href="function macro('{LALT}{RSHIFT}{H}');" target="bottomFrame">Hostile<i class="fa fa-angle-double-right pl-1"></i></a>
-                <a class="flex-fill h-12-5 text-center br bb" href="function macro('{Y}');" target="bottomFrame">Subsystem<i class="fa fa-angle-double-right pl-1"></i></a>
-                <a class="flex-fill h-12-5 text-center bt" href="function macro('{2');" target="bottomFrame">Comms<br>Panel</a>
-                <a class="flex-fill h-12-5 text-center bb" href="function macro('{3}');" target="bottomFrame">Role<br>Panel</a>
-                <a class="flex-fill h-12-5 text-center bt" href="function macro('{W}');" target="bottomFrame"><i class="fa fa-arrow-up"></i></a>
-                <a class="flex-fill h-12-5 text-center bb" href="function macro('{S}');" target="bottomFrame"><i class="fa fa-arrow-down"></i></a>
+                <a class="flex-fill h-12-5 text-center br bt" href="#" onclick=JavaScript:runMacro("macro('{H}')")>Highest<br>Threat</a>
+                <a class="flex-fill h-12-5 text-center br" href="#" onclick=JavaScript:runMacro("macro('{G}')")>Target<i class="fa fa-angle-double-right pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center br" href="#" onclick=JavaScript:runMacro("macro('{LALT}{RSHIFT}{H}')")>Hostile<i class="fa fa-angle-double-right pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center br bb" href="#" onclick=JavaScript:runMacro("macro('{Y}')")>Subsystem<i class="fa fa-angle-double-right pl-1"></i></a>
+                <a class="flex-fill h-12-5 text-center bt" href="#" onclick=JavaScript:runMacro("macro('{2')")>Comms<br>Panel</a>
+                <a class="flex-fill h-12-5 text-center bb" href="#" onclick=JavaScript:runMacro("macro('{3}')")>Role<br>Panel</a>
+                <a class="flex-fill h-12-5 text-center bt" href="#" onclick=JavaScript:runMacro("macro('{W}')")><i class="fa fa-arrow-up"></i></a>
+                <a class="flex-fill h-12-5 text-center bb" href="#" onclick=JavaScript:runMacro("macro('{S}')")><i class="fa fa-arrow-down"></i></a>
             </div>
             <div class="col-2 d-flex flex-column align-items-stretch h-100 links">
-                <a class="flex-fill h-12-5 text-center bl bt br" href="function macro('{7}');" target="bottomFrame">Wingman 1</a>
-                <a class="flex-fill h-12-5 text-center bl br" href="function macro('{8}');" target="bottomFrame">Wingman 2</a>
-                <a class="flex-fill h-12-5 text-center bl br" href="function macro('{9}');" target="bottomFrame">Wingman 3</a>
-                <a class="flex-fill h-12-5 text-center bl bb br" href="function macro('{0}');" target="bottomFrame">Wingman<br>Target</a>
-                <a class="flex-fill h-12-5 text-center bt br" href="function macro('{4}');" target="bottomFrame">Systems<br>Panel</a>
-                <a class="flex-fill h-12-5 text-center b" href="function macro('{SPACE}');" target="bottomFrame">Select</a>
-                <a class="flex-fill h-12-5 text-center b" href="function macro('{E}');" target="bottomFrame">Right<br>Tab</a>
-                <a class="flex-fill h-12-5 text-center br bb" href="function macro('{D}');" target="bottomFrame"><i class="fa fa-arrow-right"></i></a>
+                <a class="flex-fill h-12-5 text-center bl bt br" href="#" onclick=JavaScript:runMacro("macro('{7}')")>Wingman 1</a>
+                <a class="flex-fill h-12-5 text-center bl br" href="#" onclick=JavaScript:runMacro("macro('{8}')")>Wingman 2</a>
+                <a class="flex-fill h-12-5 text-center bl br" href="#" onclick=JavaScript:runMacro("macro('{9}')")>Wingman 3</a>
+                <a class="flex-fill h-12-5 text-center bl bb br" href="#" onclick=JavaScript:runMacro("macro('{0}')")>Wingman<br>Target</a>
+                <a class="flex-fill h-12-5 text-center bt br" href="#" onclick=JavaScript:runMacro("macro('{4}')")>Systems<br>Panel</a>
+                <a class="flex-fill h-12-5 text-center b" href="#" onclick=JavaScript:runMacro("macro('{SPACE}')")>Select</a>
+                <a class="flex-fill h-12-5 text-center b" href="#" onclick=JavaScript:runMacro("macro('{E}')")>Right<br>Tab</a>
+                <a class="flex-fill h-12-5 text-center br bb" href="#" onclick=JavaScript:runMacro("macro('{D}')")><i class="fa fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -84,6 +85,7 @@
     <script src="/static/js/jquery-3.3.1.min.js"></script>
     <script src="/static/js/popper.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/touchdown.js"></script>
     <!-- Scripts: Additional -->
     <script> <!--Preloader-->
         var myVar;
